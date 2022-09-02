@@ -10,12 +10,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
+<body onload="loadgeolocation()">
     <div class="weatherbody">
         <div class="weatherinput">
             <div class="state">
-                <h2>NG</h2>
-                <p>Ogbomoso</p>
+                <h2 id="country">NG</h2>
+                <p id="location">Ogbomoso</p>
             </div>
             <div class="search">
                 <input type="text" placeholder="Search">
@@ -32,29 +32,29 @@
                 <span class="thud material-icons">
                     thunderstorm
                 </span>
-                <p class="temp">12 <sup>o</sup><span>C</span> </p>
+                <p class="temp" id="temp">12 <sup>o</sup><span>C</span> </p>
             </div>
             <div class="cont">
                 <div>
                     <span class="thud material-icons">
                         thunderstorm
                     </span>
-                    <p> Humidty</p>
-                    <p style="text-align: center;">50%</p>
+                    <p> Humidity</p>
+                    <p style="text-align: center;" id="hum"></p>
                 </div>
                 <div>
                     <span class="thud material-icons">
                         cloud
                     </span>
                     <p>Cloud</p>
-                    <P style="text-align: center;">50%</P>
+                    <P style="text-align: center;" id="cloud">50%</P>
                 </div>
                 <div>
                     <span class="thud material-icons">
-                        cloud
+                        thunderstorm
                     </span>
-                    <p> Cloud</p>
-                    <P style="text-align: center;">50%</P>
+                    <p> Wind</p>
+                    <P style="text-align: center;" id="wind">50%</P>
                 </div>
 
 
@@ -62,7 +62,7 @@
             </div>
         </div>
     </div>
-
+    <script src="weather.js"></script>
 </body>
 
 </html>
