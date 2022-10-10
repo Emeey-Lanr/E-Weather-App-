@@ -14,12 +14,12 @@
     <div class="weatherbody">
         <div class="weatherinput">
             <div class="state">
-                <h2 id="country">NG</h2>
-                <p id="location">Ogbomoso</p>
+                <h2 id="country"></h2>
+                <p id="location"></p>
             </div>
             <div class="search">
-                <input type="text" placeholder="Search">
-                <span class="material-icons" style="color: white;">
+                <input type="text" id="citySearch" placeholder="Search">
+                <span class="material-icons" style="color: white;cursor: pointer; " onclick="getCity()">
                     search
                 </span>
             </div>
@@ -32,29 +32,29 @@
                 <span class="thud material-icons">
                     thunderstorm
                 </span>
-                <p class="temp" id="temp">12 <sup>o</sup><span>C</span> </p>
+                <p class="temp" id="temp"> <sup></sup><span></span> </p>
             </div>
             <div class="cont">
                 <div>
                     <span class="thud material-icons">
                         thunderstorm
                     </span>
-                    <p> Humidity</p>
+                    <p class="w"> Humidity</p>
                     <p style="text-align: center;" id="hum"></p>
-                </div>
-                <div>
-                    <span class="thud material-icons">
-                        cloud
-                    </span>
-                    <p>Cloud</p>
-                    <P style="text-align: center;" id="cloud">50%</P>
                 </div>
                 <div>
                     <span class="thud material-icons">
                         thunderstorm
                     </span>
-                    <p> Wind</p>
-                    <P style="text-align: center;" id="wind">50%</P>
+                    <p class="w">Feels like </p>
+                    <P style="text-align: center;" id="cloud"></P>
+                </div>
+                <div>
+                    <span class="thud material-icons">
+                        thunderstorm
+                    </span>
+                    <p class="w"> Wind</p>
+                    <P style="text-align: center;" id="wind"></P>
                 </div>
 
 
